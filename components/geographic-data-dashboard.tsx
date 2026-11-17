@@ -780,7 +780,10 @@ export function GeographicDataDashboard() {
                                                             key={idx}
                                                             className="text-xs text-gray-600 pl-2 border-l-2 border-gray-300"
                                                           >
-                                                            <span className="font-medium">{valor.etiqueta}</span>
+                                                            <span className="inline-block font-mono font-semibold text-gray-800 bg-gray-200/80 rounded px-1.5 py-0.5 mr-1.5">
+                                                              {valor.codigo}
+                                                            </span>
+                                                            <span className="font-medium text-gray-800">{valor.etiqueta}</span>
                                                             {valor.definicion && (
                                                               <span className="text-gray-500">
                                                                 {" "}

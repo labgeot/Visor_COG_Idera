@@ -205,7 +205,10 @@ export const buildSearchIndex = (data: Categoria[], atributosDetalle: AtributoDe
         campos.push(campo("Observaciones", detalle.observaciones, 4))
       }
       for (const valor of detalle.dominio ?? []) {
-        campos.push(campo("Valor de dominio", valor.etiqueta, 2))
+        const tieneCodigo = valor.codigo !== undefined && valor.codigo !== null && valor.codigo !== ""
+        campos.push(
+          campo("Valor de dominio", tieneCodigo ? `${valor.codigo} - ${valor.etiqueta}` : valor.etiqueta, 2),
+        )
         if (valor.definicion) campos.push(campo("Definición de valor", valor.definicion, 4))
         if (valor.observaciones) campos.push(campo("Observación de valor", valor.observaciones, 4))
       }

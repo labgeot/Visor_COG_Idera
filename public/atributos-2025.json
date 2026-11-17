@@ -576,7 +576,32 @@
     "codigo": "CAM",
     "nombre": "Categoría de gestión del área de conservación ",
     "definicion": "Clasificación de las áreas en tres categoría de gestión  de conservación,  según lo  según lo establecido en la Ley  de 26.331 de Presupuestos Mínimos para la Protección Ambiental a los Bosques Nativos.",
-    "dominio": [],
+    "dominio": [
+      {
+        "codigo": -1,
+        "etiqueta": "Información no disponible",
+        "definicion": "Cuando no se dispone o no se tiene certeza de los datos.",
+        "observaciones": ""
+      },
+      {
+        "codigo": 1,
+        "etiqueta": "Categoría I (rojo:) zona de alto valor de conservación",
+        "definicion": "Valor de dominio que denota un  muy alto de conservación. Incluye áreas que por sus ubicaciones relativas a reservas, su valor de conectividad, la presencia de valores biológicos sobresalientes y/o la protección de cuencas que ejercen, ameritan su persistencia como bosque a perpetuidad, aunque estos sectores puedan ser hábitat de comunidades indígenas y ser objeto de investigación científica.",
+        "observaciones": ""
+      },
+      {
+        "codigo": 2,
+        "etiqueta": "Categoría II (amarillo): zona de valor medio de conservación",
+        "definicion": "Valor de dominio que denota un mediano valor de conservación, que pueden estar degradados pero que a juicio de la autoridad de aplicación jurisdiccional con la implementación de actividades de restauración pueden tener un valor alto de conservación y que podrán ser sometidos a los siguientes usos: aprovechamiento sostenible, turismo, recolección e investigación científica.",
+        "observaciones": ""
+      },
+      {
+        "codigo": 3,
+        "etiqueta": "Categoría III (verde)",
+        "definicion": "Valor de dominio que denota un bajo valor de conservación que pueden transformarse parcialmente o en su totalidad aunque dentro de los criterios de la presente ley.",
+        "observaciones": ""
+      }
+    ],
     "tipo": "Cadena de caracteres",
     "observaciones": "-"
   },
